@@ -10,7 +10,7 @@ def game_loop(number):
         guess = input("Guess the number:")
         try:
             guess = int(guess)
-        except TypeError:
+        except ValueError:
             print("Please provide a valid number")
             continue
         if guess > number:
